@@ -1,0 +1,19 @@
+{
+  "name": "seedlinked",
+  "version": "1.0.0",
+  "description": "From Uniformity to Diversity, a breeding ecosystem network connecting you to the seed you need.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoleNero/seedlinked.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoleNero/seedlinked/issues"
+  },
+  "homepage": "https://github.com/SoleNero/seedlinked#readme"
+}
