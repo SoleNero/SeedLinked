@@ -2,12 +2,16 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import App from './container/App.js';
-import Main from './component/main.js';
+import Main from './component/Main.js';
+import Navbar from './component/Navbar.js';
+import Mymap from './component/Mymap.js';
 
 export default (
   <Route path="/" component={App}>
-
-    <Route path='main'component={Main}/>
+    <IndexRoute component={Main}/>
+    <Route path="Navbar" component={Navbar}/>
+    <Route path="Main" component={Main}/>
+    <Route path="Mymap" component={Mymap}/>
   </Route>
 )
 
@@ -15,4 +19,3 @@ export default (
 
 
 
-// <IndexRoute component={LandingPage}/>

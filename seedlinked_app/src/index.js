@@ -2,13 +2,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { GoogleMap, Marker, withGoogleMap } from 'react-google-maps';
-// import { Button, Row, Col, Icon } from './react-materialize';
 
-import Main from './component/main.js';
-import Mymap from './component/map.js';
+import Main from './component/Main.js';
+import Mymap from './component/Mymap.js';
+import Navbar from './component/Navbar.js';
 import './style/index.css';
 
-import { Router, browserHistory } from 'react-router';
+import { Router, browserHistory, Route, Link, IndexRoute } from 'react-router';
 import routes from './routes';
 
 

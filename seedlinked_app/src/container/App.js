@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import Main from '../component/main.js'
+import Navbar from '../component/Navbar.js'
 
 class App extends Component {
   constructor(props){
     super(props);
      
-     this.state = { locations: {} };
+     this.state = { 
+       term: '' 
+      };
 
     
   }
   render() {
     return(
     <div>
-      <Main />
+      <Navbar />
       {this.props.children}
   </div>
   )

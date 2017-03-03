@@ -12,7 +12,7 @@ class Main extends Component {
   render(){
     return (
       <div className="main-container">
-      
+      <h1>Main Page</h1>
       </div>
     );
   }

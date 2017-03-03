@@ -15,8 +15,12 @@ class Mymap extends Component {
   // }
 
   render() {
-    //this.ref.map
-    return <div ref="map" />;
+    //this.ref.map <div ref="Mymap" />
+    return (
+      <div>
+      <h1>Map Page</h1>
+      </div>
+    )
   }
 }
 
