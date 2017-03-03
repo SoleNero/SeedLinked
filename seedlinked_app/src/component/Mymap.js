@@ -1,7 +1,5 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import { GoogleMapLoader, GoogleMap, Marker } from 'react-google-maps'
-import { withGoogleMap } from "react-google-maps";
 
 class Mymap extends Component {
   // componentDidMount(){
