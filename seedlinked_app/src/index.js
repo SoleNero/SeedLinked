@@ -2,6 +2,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { GoogleMap, Marker, withGoogleMap } from 'react-google-maps';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
 
 import Main from './component/Main.js';
 import Mymap from './component/Mymap.js';
