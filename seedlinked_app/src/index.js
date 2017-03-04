@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, browserHistory, Route, Link, IndexRoute } from 'react-router';
 // npm google-maps-react
-import Map from 'google-maps-react';
+
 // material ui framework
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
