@@ -9,7 +9,7 @@ class Navbar extends Component {
       <div>
         <nav>
             <Link to="/">Home</Link>
-            <Link to="/Mymap">Map</Link>
+            <Link to="/MainMap">Map</Link>
         </nav>
       </div>
     )

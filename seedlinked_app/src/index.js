@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, browserHistory, Route, Link, IndexRoute } from 'react-router';
-// npm google-maps-react
+import L from 'leaflet';
 
 // material ui framework
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -11,11 +11,6 @@ injectTapEventPlugin();
 
 import './style/index.css';
 
-// components, routes, containers
-import Main from './component/Main';
-import Mymap from './component/Mymap';
-import Navbar from './component/Navbar';
-import App from './container/App';
 import routes from './routes';
 
 
