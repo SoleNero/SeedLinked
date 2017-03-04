@@ -1,25 +1,18 @@
 /* eslint-disable */
 import React, { Component } from 'react';
+import { Map } from 'google-maps-react'
+
 
 class Mymap extends Component {
-  // componentDidMount(){
-  //   new google.maps.Map(this.refs.map, {
-  //     zoom: 12,
-  //     center: {
-  //       lat: this.props.lat,
-  //       lng:this.props.lon
-  //     }
-  //   });
-  // }
-
-  render() {
-    //this.ref.map <div ref="Mymap" />
+render () {
     return (
+
       <div>
-      <h1>Map Page</h1>
-      </div>
+      Mymap Component
+     </div>
     )
   }
-}
+};
+// 
 
 export default Mymap;
