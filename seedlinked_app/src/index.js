@@ -12,11 +12,10 @@ injectTapEventPlugin();
 import './style/index.css';
 
 // components, routes, containers
-import Main from './component/Main.js';
-import Mymap from './component/Mymap.js';
-import Navbar from './component/Navbar.js';
-import App from './container/App.js';
-import Container from './container/Container.js';
+import Main from './component/Main';
+import Mymap from './component/Mymap';
+import Navbar from './component/Navbar';
+import App from './container/App';
 import routes from './routes';
 
 
