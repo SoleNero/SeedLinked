@@ -2,28 +2,35 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Reddit Clone</title>
+        <title>Seed Linked</title>
+        <base href="/">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/app.css">
+       <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+        <script src="https://unpkg.com/angular-ui-router@1.0.0-beta.3/release/angular-ui-router.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.1/angular-moment.min.js"></script>
+        
+        
+        <script src="/js/app/app.module.js"></script>
+        <script src="/js/app/app.config.js"></script>
+        <script src="/js/app/app.component.js"></script>      
+        <!-- MAP component -->
+        <script src="js/map/map.component.js"></script>
     </head>
     <body ng-app="app">
 
-
-          <map></map>
-
-        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="/node_modules/angular/angular.min.js"></script>
-        <script src="/node_modules/moment/min/moment.min.js"></script>
-        <script src="/node_modules/angular-moment/angular-moment.js"></script>
-
-        <!-- APP.MODULE -->
-        <script src="js/app/app.module.js"></script>
-        <script src="js/app/app.component.js"></script>
-        <!-- POST component -->
-        <script src="js/map/map.component.js"></script>
+        <ui-view></ui-view>
+          <!--<map></map>-->
+        
+    
     </body>
 </html>

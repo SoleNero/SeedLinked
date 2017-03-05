@@ -1,6 +1,6 @@
 
 {
-  "name": "angular-drill",
+  "name": "seedlinked",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -10,7 +10,7 @@
     "start": "lite-server"
   },
   "keywords": [],
-  "author": "",
+  "author": "Justyna Foster",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.5",
