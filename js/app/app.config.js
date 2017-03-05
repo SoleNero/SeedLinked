@@ -22,7 +22,7 @@ config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
       name: 'map',
       parent: 'app',
       url: '/',
-      component: 'map'
+      component: 'mapComponent'
     });
   }
 }());

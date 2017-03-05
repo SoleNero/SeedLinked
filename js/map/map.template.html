@@ -1,14 +1,27 @@
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-default">
+<!--<nav class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand">Seed Linked</a>
         </div>
     </div>
-</nav>
+</nav>-->
 
 <!-- MAIN CONTAINER -->
-<main class="container">
+<!--<main class="container">
 
- </main> 
+ </main> -->
+
+  <h1>You're in map tamplete!</h1>
+
+<div map-lazy-load="http://maps.google.com/maps/api/js?key=AIzaSyBEFCJEB2PAORJilE22B76k071qkgz7_Ww"
+  map-lazy-load-params="" >
+  <!--<ng-map center="41,-87" zoom="3"></ng-map>-->
+  <div>
+        <ng-map zoom="15" center="[1.280095, 103.850949]">
+        </ng-map>
+        <hr>
+        <p>Time is {{date}}</p>
+    </div>
+</div>

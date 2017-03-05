@@ -10,6 +10,7 @@
     function controller(){
       const vm = this;
 
+      vm.googleMapsUrl = 'https://maps.google.com/maps/api/js';
       vm.$onInit = onInit;
 
       function onInit (){
