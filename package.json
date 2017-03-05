@@ -1,28 +1,32 @@
+
 {
-  "name": "seedlinked",
+  "name": "angular-drill",
   "version": "1.0.0",
-  "description": "From Uniformity to Diversity, a breeding ecosystem network connecting you to the seed you need.",
-  "main": "index.js",
+  "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SoleNero/seedlinked.git"
+    "postinstall": "webdriver-manager update",
+    "ensure-app": "if [ ! -d ../app/node_modules ]; then (cd ../app && yarn) fi",
+    "test": "npm run ensure-app && NODE_ENV=test protractor test/conf.js",
+    "start": "lite-server"
   },
   "keywords": [],
-  "author": "Justyna Foster",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SoleNero/seedlinked/issues"
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "express": "^4.14.0",
+    "mocha": "^2.5.3",
+    "protractor": "^4.0.13",
+    "protractor-jasmine2-screenshot-reporter": "^0.3.2"
   },
-  "homepage": "https://github.com/SoleNero/seedlinked#readme",
   "dependencies": {
-    "angular": "^1.6.2",
-    "angular-ui-router": "^1.0.0-rc.1",
+    "angular": "^1.6.1",
+    "angular-ui-router": "^1.0.0-alpha.3",
+    "angular-messages": "^1.6.1",
+    "angular-moment": "^1.0.1",
+    "angular-ui-bootstrap": "^2.4.0",
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.1",
-    "ngmap": "^1.18.0",
-    "ui-bootstrap": "^0.1.10"
+    "moment": "^2.17.1"
   }
 }
