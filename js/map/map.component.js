@@ -12,7 +12,6 @@
         const vm = this;
 
         vm.$onInit = onInit;
-        vm.onClick = onClick;
 
         function onInit(){
           NgMap.getMap().then(function(map) {
@@ -44,19 +43,8 @@
                 for(var key in temp){
                     vm.results.push(temp[key])
                 } 
-                console.log(vm.results);   
-         
+                // console.log(vm.results);   
             })
-
-
-
-
     }
-
-    function onClick(event){
-        // console.log('this is at '+ this.getPosition());
-    }
-     
-
  }
 })();

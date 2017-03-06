@@ -25,10 +25,15 @@ config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
       component: 'mapComponent'
     })
     .state({
-      name: 'vegeComponent',
+      name: 'variety',
       parent: 'app',
-      url: '/variety/:id',
-      component: 'vegeComponent'
+      url: '/variety',
+      component: 'varietyComponent',
+      resolve: {
+        variety: function(varietyService){
+          return varietyService.varietyById()
+        }
+      }
     })
   }
 }());

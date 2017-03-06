@@ -9,7 +9,7 @@ service.$inject = ['$http', '$state', '$stateParams'];
   function service ($http, $state, $stateParams){
 
     this.allCities = allCities;
-    // this.markers = markers;
+
 
 
     function allCities(){
