@@ -1,24 +1,3 @@
-// (function() {
-//     'use strict';
-//     angular.module('app')
-//         .component('map', {
-//             templateUrl: '/js/map/app.template.html',
-//             controller: controller
-//         });
-
-//         console.log("I'm in MAP component");
-
-//     function controller() {
-//         const vm = this;
-
-//         vm.$onInit = onInit;
-        
-//         function onInit() {
-//             console.log("I'm in MAP component in onInit");
-//         }
-//     }
-// }());
-
 (function() {
     'use strict';
     angular.module('app')
@@ -27,13 +6,43 @@
             controller: controller
         });
 
-        controller.$inject = ['$http', '$state', '$stateParams', 'NgMap'];
+        controller.$inject = ['NgMap', 'mapService'];
 
-        function controller($http, $state, $stateParams, NgMap) {
+        function controller(NgMap, mapService) {
         const vm = this;
 
+        vm.$onInit =onInit;
+        // vm.placeMarker = placeMarker;
+
+
+        function onInit(){
           NgMap.getMap().then(function(map) {
           vm.map = map;
         })
+        mapService.allCities()
+            .then(results => {
+                var temp = {};
+                for(var i=0; i<results.length; i++){
+                    // console.log(results[i]['city']);
+                    if(temp[results[i]['city']]){
+                        temp[results[i]['city']]['variety_name'].push(results[i]['variety_name'])
+                    } else {
+                        temp[results[i]['city']]=results[i]
+                        // console.log(temp[results[i]['city']]);
+                        var variety = results[i]['variety_name']
+                        temp[results[i]['city']]['variety_name']=[variety]
+                    }
+                }
+                // console.log(temp)
+                vm.results = [];
+                for(var key in temp){
+                    vm.results.push(temp[key])
+                } 
+                console.log(vm.results);   
+         
+            })
+    }
+     
+
  }
 })();
