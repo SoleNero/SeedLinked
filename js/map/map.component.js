@@ -11,14 +11,21 @@
         function controller(NgMap, mapService) {
         const vm = this;
 
-        vm.$onInit =onInit;
-        // vm.placeMarker = placeMarker;
-
+        vm.$onInit = onInit;
+        vm.onClick = onClick;
+        vm.showCity = showCity;
 
         function onInit(){
           NgMap.getMap().then(function(map) {
           vm.map = map;
         })
+
+        vm.showCity = function showCity(e,id){
+            vm.currentCity = vm.results[id];
+            vm.map.showInfoWindow('info-window', this);
+
+        }
+
         mapService.allCities()
             .then(results => {
                 var temp = {};
@@ -41,6 +48,14 @@
                 console.log(vm.results);   
          
             })
+
+
+
+
+    }
+
+    function onClick(event){
+        // console.log('this is at '+ this.getPosition());
     }
      
 

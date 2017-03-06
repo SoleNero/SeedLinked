@@ -23,6 +23,12 @@ config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
       parent: 'app',
       url: '/',
       component: 'mapComponent'
-    });
+    })
+    .state({
+      name: 'vegeComponent',
+      parent: 'app',
+      url: '/variety/:id',
+      component: 'vegeComponent'
+    })
   }
 }());

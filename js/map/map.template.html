@@ -4,8 +4,8 @@
 <div map-lazy-load="http://maps.google.com/maps/api/js?key=AIzaSyBEFCJEB2PAORJilE22B76k071qkgz7_Ww"
   map-lazy-load-params="{{vm.googleMapsUrl}}" >
         <ng-map class="" zoom="5" center="[40.01, -105.27]" style="height:50vw; width:50vw">
-            <marker id="marker" position="[{{city.lat}}, {{city.lng}}]" ng-repeat="city in $ctrl.results" 
-            on-click="map.showInfoWindow(event, 'info-win')">
+            <marker id="{{id}}" position="[{{city.lat}}, {{city.lng}}]" ng-repeat="(id,city) in $ctrl.results" 
+            on-click="$ctrl.showCity(event,id)">
             <!--optimized="false"
             icon="{
                 url:'css/seed2.png',
@@ -16,16 +16,15 @@
                 <div class="cm">
                 </div>
             </marker>
-            <info-window id="info-win" max-with="200" ng-repeat="object in $ctrl.results">
+            <info-window id="info-window" max-with="200">
                 <div ng-non-bindable="">
-                 <strong>city:</strong> {{object.city}}<br/>
-                 <strong>species:</strong> {{object.species}}<br/>
+                 <strong>city:</strong> {{$ctrl.currentCity.city}}<br/>
+                 <strong>species:</strong> {{$ctrl.currentCity.species}}<br/>
                  <strong>variety:</strong></br>
-                 <ul> <li ng-repeat="fruit in object.variety_name track by $index"><a ng-click="" href="#">{{fruit}}</a></li> <ul>              
+                 <ul> <li ng-repeat="fruit in $ctrl.currentCity.variety_name track by $index"><a ui-sref="vegeComponent">{{fruit}}</a></li> <ul>
                 </div>
             </info-window>
         </ng-map>
     </div>
 </div>
 </main> 
-<!--<a href="#" ng-click="vm.clicked()">Click Here</a>-->
