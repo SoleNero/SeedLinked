@@ -15,7 +15,6 @@
       return $http.get('http://localhost:5000/variety')
         .then(response => {
           return response.data;
-          console.log(response.data);
         })
     }
 
@@ -23,7 +22,6 @@
       return $http.get(`http://localhost:5000/variety`)
         .then(response => {
           const variety = response.data[0];
-          console.log(variety);
           return variety;
         })
     }

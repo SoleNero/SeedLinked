@@ -25,7 +25,6 @@
         function onInit() {
           varietyService.varietyById($stateParams.id)
           .then(variety => {
-            console.log(variety);
             vm.variety = variety;  
           });                
         }
