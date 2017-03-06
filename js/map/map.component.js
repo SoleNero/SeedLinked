@@ -13,7 +13,6 @@
 
         vm.$onInit = onInit;
         vm.onClick = onClick;
-        vm.showCity = showCity;
 
         function onInit(){
           NgMap.getMap().then(function(map) {
