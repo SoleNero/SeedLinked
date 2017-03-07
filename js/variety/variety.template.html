@@ -1,16 +1,25 @@
 
 <div class="container">
-   <h2 class="header">{{variety.variety_name}}</h2>
+  <div>
+    <h2 class="header">{{$ctrl.variety.variety_name}}</h2>
   <div class="col s12 m7">
     <div class="card horizontal">
        <div class="card-image">
-          <img src="css/img/sunset.jpg"> <!--<img src={{variety.variety_image}}>-->
+          <!--<img src="css/img/marz.jpg">--> <img src={{$ctrl.variety.variety_image}}>
        </div>
        <div class="card-stacked">
          <div class="card-content">
-          <p></p>
+          <h4>Description:</h4>
+          <p>{{$ctrl.variety.description}}</p>
+          <ul>
+            <li>Fruit color: {{$ctrl.variety.fruit_color}}</li>
+            <li>Fruit size: {{$ctrl.variety.size}}</li>
+            <li>Maturity days: {{$ctrl.variety.maturity_days}}</li>
+          </ul>
         </div>
        </div>
     </div>
   </div>
+  </div>   
 </div>
+

@@ -6,7 +6,6 @@
   service.$inject = ['$http', '$state', '$stateParams'];
 
   function service($http, $state, $stateParams){
-    console.log("you're in service!");
 
     this.getAllVariety = getAllVariety;
     this.varietyById = varietyById;

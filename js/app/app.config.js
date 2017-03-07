@@ -29,11 +29,6 @@ config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
       parent: 'app',
       url: '/:id',
       component: 'varietyComponent'
-      // resolve: {
-      //   variety: function(varietyService){
-      //     return varietyService.varietyById()
-      //   }
-      // }
     })
   }
 }());
