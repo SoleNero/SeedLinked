@@ -17,3 +17,9 @@ main.container {
 .has-error {
   color: red;
 }
+
+/* nav container */
+.navBar md-content .ext-content {
+  padding: 50px;
+  margin: 20px;
+  background-color: #FFF2E0; }

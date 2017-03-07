@@ -16,7 +16,6 @@
         vm.$onInit =onInit;
         vm.getVariety = getVariety;
 
-
         function getVariety() {
           varietyService.getAllVariety()
           .then(varieties => vm.varieties = varieties);

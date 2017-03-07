@@ -12,16 +12,17 @@
     this.varietyById = varietyById;
 
     function getAllVariety(){
-      return $http.get('http://localhost:5000/variety')
+      return $http.get('https://seedlinked-api.herokuapp.com/variety')
         .then(response => {
           return response.data;
         })
     }
 
     function varietyById(){
-      return $http.get(`http://localhost:5000/variety`)
+      return $http.get(`https://seedlinked-api.herokuapp.com/variety`)
         .then(response => {
           const variety = response.data[0];
+          console.log(variety);
           return variety;
         })
     }

@@ -26,16 +26,17 @@
 
         mapService.allCities()
             .then(results => {
+                // console.log("results ", results)
                 var temp = {};
                 for(var i=0; i<results.length; i++){
-                    // console.log(results[i]['city']);
-                    if(temp[results[i]['city']]){
-                        temp[results[i]['city']]['variety_name'].push(results[i]['variety_name'])
+                    // console.log(results[i]['city_name']);
+                    if(temp[results[i]['city_name']]){
+                        temp[results[i]['city_name']]['variety_name'].push(results[i]['variety_name'])
                     } else {
-                        temp[results[i]['city']]=results[i]
-                        // console.log(temp[results[i]['city']]);
+                        temp[results[i]['city_name']]=results[i]
+                        // console.log(temp[results[i]['city_name']]);
                         var variety = results[i]['variety_name']
-                        temp[results[i]['city']]['variety_name']=[variety]
+                        temp[results[i]['city_name']]['variety_name']=[variety]
                     }
                 }
                 // console.log(temp)

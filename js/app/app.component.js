@@ -11,9 +11,9 @@
 
       vm.googleMapsUrl = 'https://maps.google.com/maps/api/js';
       vm.$onInit = onInit;
+      // vm.currentNavItem = '/';
 
       function onInit (){
-
       }
     }
 }());
