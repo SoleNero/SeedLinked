@@ -19,9 +19,9 @@
     }
 
     function varietyById(){
-      return $http.get(`https://seedlinked-api.herokuapp.com/variety/`)
+      return $http.get(`https://seedlinked-api.herokuapp.com/variety`)
         .then(response => {
-          //here
+
           const variety = response.data;
           // console.log(variety);
           return variety;

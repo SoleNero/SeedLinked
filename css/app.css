@@ -18,6 +18,22 @@ main.container {
   color: red;
 }
 
-/*#google-map-tab {
+.nav-wrapper {
+  background-color: #7d7f34;
+}
 
-}*/
+a.brand-logo {
+  font-family: 'Satisfy', cursive;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 40px;
+}
+
+a.manu-bar {
+  font-family: 'Montserrat:900', sans-serif;
+  font-size: 20px;
+}
+
+.ng-binding {
+  font-family: 'Montserrat', sans-serif;
+}
