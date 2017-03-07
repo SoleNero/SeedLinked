@@ -13,7 +13,7 @@ service.$inject = ['$http', '$state', '$stateParams'];
 
 
     function allCities(){
-      return $http.get('http://localhost:5000/city_varieties')
+      return $http.get('https://seedlinked-api.herokuapp.com/city_varieties')
         .then(response => response.data);
     }
   }
