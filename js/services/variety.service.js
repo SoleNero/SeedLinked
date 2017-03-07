@@ -19,10 +19,11 @@
     }
 
     function varietyById(){
-      return $http.get(`https://seedlinked-api.herokuapp.com/variety`)
+      return $http.get(`https://seedlinked-api.herokuapp.com/variety/`)
         .then(response => {
-          const variety = response.data[0];
-          console.log(variety);
+          //here
+          const variety = response.data;
+          // console.log(variety);
           return variety;
         })
     }

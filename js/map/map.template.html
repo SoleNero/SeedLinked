@@ -3,6 +3,8 @@
 <main class="container">
 <div map-lazy-load="http://maps.google.com/maps/api/js?key=AIzaSyBEFCJEB2PAORJilE22B76k071qkgz7_Ww"
   map-lazy-load-params="{{vm.googleMapsUrl}}" >
+  <div id="google-map-tab" class="col s12">
+      <div class="col s8 offset-s2">
         <ng-map class="" zoom="5" center="[40.01, -105.27]" style="height:50vw; width:50vw">
             <marker id="{{id}}" position="[{{city.lat}}, {{city.lng}}]" ng-repeat="(id,city) in $ctrl.results" 
             on-click="$ctrl.showCity(event,id)">
@@ -25,6 +27,8 @@
                 </div>
             </info-window>
         </ng-map>
+        </div>
+     </div>
     </div>
 </div>
 </main> 
