@@ -20,7 +20,7 @@
                         <strong>Species:</strong> {{$ctrl.currentCity.species}}<br/>
                         <strong>Variety:</strong></br>
                         <ul>
-                            <li ng-repeat="fruit in $ctrl.currentCity.variety_name track by $index"><a ui-sref="variety">{{fruit}}</a></li>
+                            <li ng-repeat="fruit in $ctrl.currentCity.variety_name track by $index"><a ui-sref="variety({id:fruit})">{{fruit}}</a></li>
                             <ul>
                     </div>
                 </info-window>

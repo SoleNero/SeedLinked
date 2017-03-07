@@ -27,13 +27,13 @@ config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
     .state({
       name: 'variety',
       parent: 'app',
-      url: '/variety',
-      component: 'varietyComponent',
-      resolve: {
-        variety: function(varietyService){
-          return varietyService.varietyById()
-        }
-      }
+      url: '/:id',
+      component: 'varietyComponent'
+      // resolve: {
+      //   variety: function(varietyService){
+      //     return varietyService.varietyById()
+      //   }
+      // }
     })
   }
 }());

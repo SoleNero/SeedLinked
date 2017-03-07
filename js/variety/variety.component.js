@@ -14,22 +14,14 @@
       const vm = this;
 
         vm.$onInit =onInit;
-        vm.getVariety = getVariety;
 
-        function getVariety() {
-          varietyService.getAllVariety()
-          .then(varieties => vm.varieties = varieties);
-        }
-
-        function onInit() {
+         function onInit(){
+          console.log($stateParams.id);
           varietyService.varietyById($stateParams.id)
           .then(variety => {
-            vm.variety = [];
-            // console.log(variety[0], variety[1], variety[2]);
-            vm.variety.push(variety[0], variety[1], variety[2]);  
-            console.log(vm.variety);
-          });                
+            vm.variety = variety;
+            console.log(variety);
+          })
         }
     }
-}());
-
+}());     

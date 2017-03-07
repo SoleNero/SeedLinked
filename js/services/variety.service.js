@@ -18,12 +18,10 @@
         })
     }
 
-    function varietyById(){
-      return $http.get(`https://seedlinked-api.herokuapp.com/variety`)
+    function varietyById(id){
+      return $http.get(`http://localhost:5000/variety/${id}`)
         .then(response => {
-
           const variety = response.data;
-          // console.log(variety);
           return variety;
         })
     }
