@@ -38,3 +38,10 @@ a.manu-bar {
   font-family: 'Montserrat', sans-serif;
 }
 
+div .card-content {
+  background-color: #cddc39;
+}
+
+body {
+  background-color: #f1f8e9;
+}
