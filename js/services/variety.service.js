@@ -12,7 +12,7 @@
     
 
     function varietyById(id){
-      return $http.get(`http://localhost:5000/variety/${id}`)
+      return $http.get(`https://seedlinked-api.herokuapp.com/variety/${id}`)
         .then(response => {
           const variety = response.data;
           return variety;

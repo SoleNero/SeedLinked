@@ -19,6 +19,10 @@
     "protractor-jasmine2-screenshot-reporter": "^0.3.2"
   },
   "dependencies": {
-    "ngmap": "^1.18.0"
+    "ngmap": "^1.18.0",
+    "nodemon": "^1.11.0"
+  },
+  "engines": {
+    "node": "7.0.0"
   }
 }
