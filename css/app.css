@@ -1,3 +1,20 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f8e9;  
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 .media-object {
   max-width: 200px;
 }
@@ -6,21 +23,9 @@
   cursor: pointer;
 }
 
-main.container {
-  margin-bottom: 4em;
-  display: flex;
-  flex-direction: row
-}
-
+/*navbar*/
 .nav-wrapper {
   background-color: #7d7f34;
-}
-
-a.brand-logo {
-  font-family: 'Satisfy', cursive;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 40px;
 }
 
 a.manu-bar {
@@ -32,15 +37,13 @@ a.manu-bar {
   font-family: 'Montserrat', sans-serif;
 }
 
-body, html {
-  background-color: #f1f8e9;
-}
-
+/*map*/
 #google-map-tab {
   display: flex;
   flex-direction: row;
 }
 
+/*filter card*/
 div.filter-conatiner{
   margin-left: 20px;
   max-width: 708px;
@@ -81,3 +84,31 @@ div .container{
   display: flex;
   font-family: 'Montserrat', sans-serif;    
 }
+
+/*app logo*/
+a.brand-logo {
+  font-family: 'Satisfy', cursive;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 40px;
+  color: white;
+}
+
+/*footer*/
+footer {
+  height: 50px;
+  background-color: #7d7f34; 
+  font-family: 'Montserrat Alternates:700', sans-serif;  
+  padding-left:20px;
+}
+
+/*app background*/
+body, html {
+  background-color: #f1f8e9;
+}
+
+/*keep fooder at the bottom*/
+ui-view{
+  min-height: calc(100vh - 50px); 
+}
+

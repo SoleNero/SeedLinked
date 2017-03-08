@@ -2,7 +2,7 @@
 <div layout="column" layout-margin >
     <div map-lazy-load="http://maps.google.com/maps/api/js?key=AIzaSyBEFCJEB2PAORJilE22B76k071qkgz7_Ww" map-lazy-load-params="{{vm.googleMapsUrl}}">
     <div id="google-map-tab" flex>
-            <ng-map flex zoom="4" center="[40.01, -95.27]" style="height:50vw; width:50vw;">
+            <ng-map flex zoom="4" center="[40.01, -95.27]" style="height:40vw; width:50vw;">
                 <marker id="{{id}}" position="[{{city.lat}}, {{city.lng}}]" ng-repeat="(id,city) in $ctrl.results" on-click="$ctrl.showCity(event,id)">
                 </marker>
                 <info-window id="info-window" max-with="200">
@@ -41,7 +41,8 @@
 </div>
 </div>
 
-<!--COPY to fix, query db-->
+<!--fix it ^, query db-->
+
  <!--<div flex class="filter-container">
                 <h1 class="md-title"> Pick the variety</h1>
                     <md-input-container>-->
