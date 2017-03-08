@@ -19,23 +19,41 @@
                 </info-window>
             </ng-map>
             <!--filter-->
-            <div flex>
-                <h1 class="md-title"> Pick the variety</h1>
-                <div>
+            <div flex class="filter-container">
+                <h1 class="md-title"> Select the Variety</h1>
                     <md-input-container>
                         <!--<label>{{}}</label>-->
-                        <md-select ng-model="$ctrl.selectedItem" ng-change="$ctrl.getSelectedText()">
-                            <md-optgroup label="items">
+                        <md-select ng-model="$ctrl.selectedItem" ng-change="$ctrl.demoFunc()">
+                            <md-optgroup label="varieties">
                                 <md-option ng-value="item" ng-repeat="item in $ctrl.varieties" ng-cloak>{{item.variety_name}}</md-option>
                             </md-optgroup>
                         </md-select>
                     </md-input-container>
-                </div>
-                
+                    <div>
+                        <li class="selected_varieties" ng-repeat="selected in $ctrl.selectedItem.city_name">
+                            {{selected}}
+                        </li>
+                        
+                <!--<p ng-if="$ctr.selectedItem == $ctrl.data.variety_name" ng-repeat="(id, variety_name) in $ctrl.data">{{$ctrl.data.id.city_name}}</p>                -->
             </div>
-            <div>
-                <p ng-cloak>{{$ctrl.selectedItem}}</p>
-            </div>
+            </div>           
     </div>
 </div>
 </div>
+
+<!--COPY to fix, query db-->
+ <!--<div flex class="filter-container">
+                <h1 class="md-title"> Pick the variety</h1>
+                    <md-input-container>-->
+                        <!--<label>{{}}</label>-->
+                        <!--<md-select ng-model="$ctrl.selectedItem" ng-change="$ctrl.getSelectedText()">
+                            <md-optgroup label="varieties">
+                                <md-option ng-value="item" ng-repeat="item in $ctrl.varieties" ng-cloak>{{item.variety_name}}</md-option>
+                            </md-optgroup>
+                        </md-select>
+                    </md-input-container>
+                    <div>
+                <p>{{$ctrl.selectedItem}}</p>-->
+                <!--<p ng-if="$ctr.selectedItem == $ctrl.data.variety_name" ng-repeat="(id, variety_name) in $ctrl.data">{{$ctrl.data.id.city_name}}</p>                -->
+            <!--</div>
+            </div>  -->

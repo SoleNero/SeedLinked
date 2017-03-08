@@ -6,16 +6,10 @@
   cursor: pointer;
 }
 
-.search-form {
-  margin-top: 4px;
-}
-
 main.container {
   margin-bottom: 4em;
-}
-
-.has-error {
-  color: red;
+  display: flex;
+  flex-direction: row
 }
 
 .nav-wrapper {
@@ -42,11 +36,41 @@ div .card-content {
   background-color: #cddc39;
 }
 
-body html {
+body, html {
   background-color: #f1f8e9;
 }
 
 #google-map-tab {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+h1.md-title {
+  font-family: 'Montserrat Alternates:700', sans-serif;
+  align-content: center;
+  margin-left:40px;
+}
+
+div.filter-conatiner{
+  margin-left: 20px;
+  max-width: 708px;
+}
+
+md-input-container {
+  margin:40px;
+}
+
+p.ng-binding {
+  padding:40px;
+}
+
+.card-image {
+  height: 100%;
+  width: 100%;
+}
+
+.selected_varieties {
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 40px;
 }

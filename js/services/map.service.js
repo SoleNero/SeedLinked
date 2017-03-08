@@ -27,7 +27,7 @@ service.$inject = ['$http', '$state', '$stateParams'];
     }
 
     function getCitiesByVariety(){
-      return $http.get('https://seedlinked-api.herokuapp.com/city_varieties')
+      return $http.get('http://localhost:5000/city_varieties')
       .then(response => {
           return response.data;
       })
