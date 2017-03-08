@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "postinstall": "webdriver-manager update",
     "ensure-app": "if [ ! -d ../app/node_modules ]; then (cd ../app && yarn) fi",
     "test": "npm run ensure-app && NODE_ENV=test protractor test/conf.js",
     "start": "lite-server"
