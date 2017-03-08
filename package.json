@@ -2,6 +2,9 @@
   "name": "seedlinked",
   "version": "1.0.0",
   "description": "",
+  "scripts": {
+    "start": "lite-server"
+  },
   "keywords": [],
   "author": "Justyna Foster",
   "license": "ISC",
@@ -9,6 +12,10 @@
     "browser-sync": "^2.18.5"
   },
   "dependencies": {
-    "ngmap": "^1.18.0"
+    "ngmap": "^1.18.0",
+    "nodemon": "^1.11.0"
+  },
+  "engines": {
+    "node": "7.0.0"
   }
 }

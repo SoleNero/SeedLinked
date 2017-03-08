@@ -37,6 +37,47 @@ a.manu-bar {
   font-family: 'Montserrat', sans-serif;
 }
 
+/*about page*/
+/*.about-container{
+  background-image: url(img/tom-demo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: 99;
+}
+
+div .content-about{
+  left: 0;
+  top: 0;
+  margin: auto;
+  padding-top:50px;
+  background-color: white, transparent;
+  max-width: 600px;
+  align-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}*/
+
+.about-container {
+background: url(img/tom-demo.jpg) no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+display: table;
+width: 75%;
+margin: auto;
+color: white;
+}
+.about-container .content-conta {
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+height: 689px
+}
+
 /*map*/
 #google-map-tab {
   display: flex;

@@ -19,9 +19,15 @@ config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
       component: 'app',
     })
     .state({
-      name: 'map',
+      name: 'about',
       parent: 'app',
       url: '/',
+      component: 'aboutComponent'
+    })
+    .state({
+      name: 'map',
+      parent: 'app',
+      url: '/map',
       component: 'mapComponent'
     })
     .state({
@@ -30,5 +36,6 @@ config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
       url: '/:id',
       component: 'varietyComponent'
     })
+    
   }
 }());
