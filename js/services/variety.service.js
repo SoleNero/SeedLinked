@@ -7,15 +7,9 @@
 
   function service($http, $state, $stateParams){
 
-    this.getAllVariety = getAllVariety;
     this.varietyById = varietyById;
 
-    function getAllVariety(){
-      return $http.get('https://seedlinked-api.herokuapp.com/variety')
-        .then(response => {
-          return response.data;
-        })
-    }
+    
 
     function varietyById(id){
       return $http.get(`http://localhost:5000/variety/${id}`)

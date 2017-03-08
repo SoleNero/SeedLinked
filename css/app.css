@@ -42,6 +42,11 @@ div .card-content {
   background-color: #cddc39;
 }
 
-body {
+body html {
   background-color: #f1f8e9;
+}
+
+#google-map-tab {
+  display: flex;
+  flex-direction: column;
 }
