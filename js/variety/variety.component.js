@@ -19,8 +19,6 @@
           varietyService.varietyById($stateParams.id)
           .then(variety => {
             vm.variety = variety;
-            getVarieties()
-            // console.log(variety);
           })
         }  
     }
