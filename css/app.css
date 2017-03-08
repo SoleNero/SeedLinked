@@ -32,10 +32,6 @@ a.manu-bar {
   font-family: 'Montserrat', sans-serif;
 }
 
-div .card-content {
-  background-color: #cddc39;
-}
-
 body, html {
   background-color: #f1f8e9;
 }
@@ -43,12 +39,6 @@ body, html {
 #google-map-tab {
   display: flex;
   flex-direction: row;
-}
-
-h1.md-title {
-  font-family: 'Montserrat Alternates:700', sans-serif;
-  align-content: center;
-  margin-left:40px;
 }
 
 div.filter-conatiner{
@@ -60,8 +50,20 @@ md-input-container {
   margin:40px;
 }
 
-p.ng-binding {
+/*variety profile content*/
+div .variety-card{
   padding:40px;
+}
+
+h1.md-title {
+  font-family: 'Montserrat Alternates:700', sans-serif;
+  align-content: center;
+  margin-left:40px;
+}
+
+.card .card-content{
+  padding: 20px;
+  background-color: #cddc39;    
 }
 
 .card-image {
@@ -73,4 +75,9 @@ p.ng-binding {
   list-style-type: none;
   font-size: 20px;
   margin-left: 40px;
+}
+
+div .container{
+  display: flex;
+  font-family: 'Montserrat', sans-serif;    
 }
