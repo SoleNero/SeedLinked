@@ -81,9 +81,10 @@ div .variety-card{
 }
 
 h1.md-title {
-  font-family: 'Montserrat Alternates:700', sans-serif;
-  align-content: center;
-  margin-left:40px;
+  font-family: 'Montserrat Alternates:900', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
 }
 
 .card .card-content{

@@ -60,7 +60,7 @@
         // temporary filter function
             vm.amishGold = {city_name: ["Arlington", "Artesia", "Chazy", "East Lansing", "Ithaca", "Los Lunas"]};
             vm.Baller ={city_name: ["Chazy", "Chickasha", "Farmington", "Ithaca", "Landisville", "Los Lunas"]};
-            vm.berwickGerman={city_name: ["Arlington", "Capac", "Carrington", "Chatham", "Chazy", "Chippewa Falls", "Cobleskill", "Cooperstown", "East Lansing", "Lake City", "Lancaster", "LeRoy", "Lexington", "Los Lunas", "Minot"]}
+            vm.berwickGerman={city_name: ["Arlington", "Capac", "Carrington", "Chatham", "Chazy", "Chippewa Falls", "Cobleskill", "Cooperstown"]}
             vm.random = {city_name: ['Rexburg', 'Moccasin', 'Las Cruces', 'Huntley', 'Chickasha']}    
 
                 function demoFunc() {
