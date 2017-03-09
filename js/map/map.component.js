@@ -58,10 +58,10 @@
         }
 
         // temporary filter function
-            vm.amishGold = {city_name: ["Arlington", "Artesia", "Chazy", "East Lansing", "Ithaca", "Los Lunas"]};
-            vm.Baller ={city_name: ["Chazy", "Chickasha", "Farmington", "Ithaca", "Landisville", "Los Lunas"]};
-            vm.berwickGerman={city_name: ["Arlington", "Capac", "Rock Springs", "Chatham", "Chazy", "Rosemount", "Cobleskill", "Streeter"]}
-            vm.random = {city_name: ['Rexburg', 'Moccasin', 'Las Cruces', 'Huntley', 'Chickasha']}    
+            vm.amishGold = {city_name: ["Arlington WI", "Artesia NM", "Chazy NY", "East Lansing MI", "Ithaca NY", "Los Lunas NM"]};
+            vm.Baller ={city_name: ["Chazy NY", "Chickasha OK", "Farmington NM", "Ithaca NY", "Landisville PA", "Los Lunas NM"]};
+            vm.berwickGerman={city_name: ["Arlington WI", "Capac MI", "Rock Springs PA", "Chatham MI", "Streeter ND", "Rosemount NM", "Cobleskill NY"]}
+            vm.random = {city_name: ['Rexburg ID', 'Moccasin MT', 'Quicksand KY', 'Huntley MT', 'Chickasha OK']}    
 
                 function demoFunc() {
                 if(vm.selectedItem.variety_name == 'Amish Gold'){
