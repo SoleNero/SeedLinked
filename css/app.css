@@ -50,8 +50,9 @@ width: 75%;
 margin: auto;
 color: white;
 }
+
 .about-container .content-conta {
-font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
 font-size: 20px;
 display: table-cell;
 text-align: center;
@@ -75,16 +76,27 @@ md-input-container {
   margin:40px;
 }
 
-/*variety profile content*/
-div .variety-card{
-  padding:40px;
-}
-
 h1.md-title {
-  font-family: 'Montserrat Alternates:900', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   text-align: center;
   font-size: 30px;
   margin-top: 50px;
+}
+
+h1.title-city {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left:40px;
+}
+
+span {
+  font-size: 40px;
+  color: #33691e;
+}
+
+/*variety profile content*/
+div .variety-card{
+  padding:40px;
 }
 
 .card .card-content{
@@ -98,14 +110,16 @@ h1.md-title {
 }
 
 .selected_varieties {
-  list-style-type: none;
+  list-style-type: disc;
+  list-style-image: url(img/ecology-icon.png);
+  list-style-position: inside;
   font-size: 20px;
   margin-left: 40px;
 }
 
 div .container{
   display: flex;
-  font-family: 'Montserrat', sans-serif;    
+  font-family: 'Raleway', sans-serif;    
 }
 
 /*app logo*/
@@ -121,7 +135,7 @@ a.brand-logo {
 footer {
   height: 50px;
   background-color: #7d7f34; 
-  font-family: 'Montserrat Alternates:700', sans-serif;  
+  font-family: 'Raleway:700', sans-serif;  
   padding-left:20px;
 }
 
