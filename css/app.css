@@ -33,8 +33,21 @@ a.manu-bar {
   font-size: 20px;
 }
 
+nav ul a {
+  transition: background-color 0.5s ease;
+}
+
+nav ul a:hover{
+  background-color: #cddc39;
+  color:black;
+}
+
 .ng-binding {
   font-family: 'Montserrat', sans-serif;
+}
+
+a.ng-binding {
+  color:#33691e;
 }
 
 /*about page*/
@@ -58,6 +71,20 @@ display: table-cell;
 text-align: center;
 vertical-align: middle;
 height: 689px
+}
+
+.content-about-box {
+  /*border: solid white 1px;*/
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 90%;
+  margin-left: 5%;
+  padding: 2%;
+  transition: background-color 0.5s ease;
+}
+
+.content-about-box:hover {
+  background-color: #cddc39;
+  color:black;
 }
 
 /*map*/

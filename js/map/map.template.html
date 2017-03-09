@@ -7,7 +7,7 @@
                 </marker>
                 <info-window id="info-window" max-with="200">
                     <div ng-non-bindable="">
-                        City: {{$ctrl.currentCity.city_name}}<br/> Species: {{$ctrl.currentCity.species}}<br/> Variety:
+                        <strong>City:</strong> {{$ctrl.currentCity.city_name}}<br/> <strong>Species:</strong> {{$ctrl.currentCity.species}}<br/> <strong>Variety:</strong>
                         </br>
                         <ul>
                             <li ng-repeat="fruit in $ctrl.currentCity.variety_name track by $index">
